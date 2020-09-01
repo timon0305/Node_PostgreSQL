@@ -1,0 +1,42 @@
+{
+  "name": "example-node-postgres",
+  "version": "1.0.0",
+  "description": "Simple example node and the node-postgres collection",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-dev": "nodemon index.js",
+    "test": "jest",
+    "generate-docs": "jsdoc ./src/**/*.js -d docs/",
+    "clean-docs": "rm -r -f docs/",
+    "clean": "rm -r -f docs/ && rm -r -f node_modules/",
+    "update-coc": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'Updating CODE_OF_CONDUCT.md'"
+  },
+  "keywords": [
+    "js",
+    "node",
+    "node-postgres",
+    "postgresql"
+  ],
+  "author": "Gustavo F. Silva",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.6.0",
+    "jest": "^23.6.0",
+    "jsdoc": "^3.5.5",
+    "lint": "^1.1.2",
+    "nodemon": "^1.18.4",
+    "superagent": "^4.0.0-beta.5",
+    "supertest": "^3.3.0",
+    "weallbehave": "^1.2.0"
+  },
+  "dependencies": {
+    "ak-logger": "^1.1.1",
+    "log": "^1.4.0",
+    "md5": "^2.2.1",
+    "pg": "^7.4.3",
+    "restify": "^7.2.1"
+  }
+}
